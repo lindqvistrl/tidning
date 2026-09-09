@@ -1,0 +1,116 @@
+<!doctype html>
+
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tidningsnamn</title>
+    <!--Syns i webläsarens flik-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+      <header>
+      <!--Logga och tidningens namn-->
+      <img src="länk.com" alt="Tidningsnamn logotyp" />
+      <h1>Tidningsnamn</h1>
+      <nav>
+        <ul>
+          <!--Meny lista-->
+          <li><a href="#">Hem</a></li>
+          <li><a href="#">Senaste Nytt</a></li>
+          <li><a href="#">Arkiv</a></li>
+          <li><a href="#">Kontakta oss</a></li>
+        </ul>
+      </nav>
+      <!--Sök knapp-->
+      <form role="search">
+        <label for="search">Sök</label>
+        <input type="search" id="search" name="search" />
+        <button type="submit">Sök</button>
+        </form>
+    </header>
+    
+    <main>
+    <article>
+      <!--Första artikeln-->
+      <h2>Huvudartikelns titel</h2>
+      <img src="Länk.com" alt="Beskriv bilden här" />
+      <p>Text skriven av Byline</p>
+      <p>Brödtext till artikel</p>
+      <blockquote>
+        <p>"Här hamnar ett citat"</p>
+      </blockquote>
+      <button type="button">Läs mer</button>
+      
+    </article>
+    <article>
+      <!--Andra artikeln-->
+      <h2>Andra Artikelns titel</h2>
+      <p>Brödtext till artikel</p>
+      <button type="button">Läs mer</button>
+      
+    </article>
+    <article>
+      <!--Tredje artikeln-->
+      <h2>Tredje Artikelns titel</h2>
+      <p>Brödtext till artikel</p>
+      <button type="button">Läs mer</button>
+      
+    </article>
+    <section>
+      <h2>Tipsa redaktionen</h2>
+      <form>
+        <label for="name">Namn</label>
+        <input type="text" id="name" name="name" />
+        <label for="phone">Telefonnummer</label>
+        <input type="tel" id="phone" name="phone" />
+        <label for="email">E-post</label>
+        <input type="email" id="email" name="email" />
+        <!--Dropdown meny för att välja ämne-->
+        <label for="category">Välj ämne</label>
+        <select id="category" name="category">
+          <option value="">Välj ämne</option>
+          <option value="politik">Politik</option>
+          <option value="sport">Sport</option>
+          <option value="skvaller">Grannskvaller</option>
+        </select>
+        <label for="message">Meddelande</label>
+        <textarea id="message" name="message"></textarea>
+        <!--Checkbox för att välja om man vill bli kontaktad-->
+        <input type="checkbox" id="kontakta-mig" name="kontakta-mig" />
+        <label for="kontakta-mig">Kontakta mig</label>
+        <button type="submit">Skicka</button>
+      </form>
+      <details><!--Rullgardin för mer information om gdpr och villkor-->
+        <summary>GDPR och Villkor</summary>
+        <p>Mer info om GDPR och villkor.</p>
+      </details> 
+    </section> 
+    </main> 
+        <footer>
+        <div>
+        <ul>
+          <li>Företagsnamn</li>
+          <li>Adress</li>
+          <li><a href="tel:+46123456789">Telefon</a></li>
+          <li><a href="mailto:info@tidning.com">Epost</a></li>
+        </ul>
+        </div>
+        <div>
+        <ul>
+          <li><a href="#">Sitemap</a></li>
+          <li><a href="#">Om oss</a></li>
+        </ul>
+        </div>
+        <div>
+        <p>Följ oss på sociala medier:</p>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+        </div>
+        <p>&copy; 2023 Tidningsnamn. Alla rättigheter förbehållna.</p>
+      </footer>
+  </body>
+</html>
