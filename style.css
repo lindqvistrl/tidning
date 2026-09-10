@@ -3,24 +3,92 @@ body {
     background-color: rgb(222, 231, 239);
 }
 
-
-
 div {
     outline: 3px solid red;
 }
 
-.navMenu {
-    padding: 10px;
-    outline: 3px solid rgb(199, 31, 177);
+
+
+
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Logga och tidningens namn , bredvidvarandra i varsin box */
+.newsName {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    width: 70%;
+    order: 1;
 }
 
 .newsName div {
+    width:5rem;
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
 
-.newsName {
-    display: flex;
-    align-items: center;
+
+/* Mobilvy */
+.navMenu {
+    width:50% ;
+    order: 2;
 }
+
+.search {
+    width: 50%;
+    order: 3;
+}
+.articleTwo img {
+    display: none;
+}
+
+
+
+/*Desktopvy overrride för större skärmar*/
+@media screen and (min-width: 768px) {
+    .newsName {
+        width: 70%;
+    }
+    .navMenu {
+        order: 3;
+        width: 100%;
+    }
+    .search {
+        order: 2;
+        width: 30%;
+    }
+}
+
+main {
+    display: flex;
+    gap: 1rem;
+}
+
+.articleOne, .articleTwo, .articleThree, {
+    width: 33%;
+}
+   
+
+
+
+.article img {
+    aspect-ratio: 2/1;
+    object-fit: cover;
+    
+}
+.articleTwo img {
+    display: block;
+}
+

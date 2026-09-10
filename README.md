@@ -5,7 +5,7 @@
 Uppgift Planerad tid | Faktisk tid |
 
 Header m. logga, titel,      | 3 SP   | 4h |
-meny, sök, navigering        | 3 SP   | 1h |
+meny, sök, navigering        | 3 SP   | 2h |
 Artikel 1 med citat och bild | 3 SP   | 1h |
 Artikel 2                    | 3 SP   | 40 min |
 artikel 3 med bild           | 3 SP   |
