@@ -1,0 +1,26 @@
+
+body {
+    background-color: rgb(222, 231, 239);
+}
+
+
+
+div {
+    outline: 3px solid red;
+}
+
+.navMenu {
+    padding: 10px;
+    outline: 3px solid rgb(199, 31, 177);
+}
+
+.newsName div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.newsName {
+    display: flex;
+    align-items: center;
+}
