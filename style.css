@@ -23,6 +23,13 @@ img {
 }
 
 /* Logga och tidningens namn , bredvidvarandra i varsin box */
+
+main {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
 .newsName {
     display: flex;
     align-items: center;
@@ -45,6 +52,11 @@ img {
     width:50% ;
     order: 2;
 }
+.navMenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
 .search {
     width: 50%;
@@ -58,6 +70,31 @@ img {
 
 /*Desktopvy overrride för större skärmar*/
 @media screen and (min-width: 768px) {
+    
+    
+    main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    flex-direction: row;
+    }
+    .articleOne {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .articleTwo {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .articleThree {
+        grid-column: 3;
+        grid-row: 1;
+    }
+    section {
+        grid-column: 3;
+        grid-row: 2;
+    }   
+
     .newsName {
         width: 70%;
     }
@@ -65,21 +102,24 @@ img {
         order: 3;
         width: 100%;
     }
+
+    .navMenu ul {
+    list-style: none;
+    display: flex;
+    gap: 5rem;
+    padding: 0;
+    margin: 0;
+    }
+
     .search {
         order: 2;
         width: 30%;
     }
+    .articleTwo img {
+    display: block;
 }
-
-main {
-    display: flex;
-    gap: 1rem;
+    
 }
-
-.articleOne, .articleTwo, .articleThree, {
-    width: 33%;
-}
-   
 
 
 
@@ -88,7 +128,5 @@ main {
     object-fit: cover;
     
 }
-.articleTwo img {
-    display: block;
-}
+
 
