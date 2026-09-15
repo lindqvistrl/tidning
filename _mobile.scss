@@ -1,83 +1,89 @@
-body {
-  background-color: rgb(222, 231, 239);
-}
-
-
-
-header {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-/*Logga och tidningsnamn bredvid varandra */
-
-.newsName {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 1rem;
-  width: 70%;
-  order: 1;
-}
-
-/*Logga, begränsar loggans bredd*/
-
-.newsName div {
-  width: 5rem;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-/*Hamburgermeny och sök, rad under loggan*/
-
-.menuBar {
-  display: flex;
-  width: 100%;
-  order: 3;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-}
-
-/* Sökfält*/
-
-
-.search {
-  width: 30%;
-  order: 2;
-}
-
-.search form {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.5rem;
-}
-
-.search input {
-  padding: 0.3rem 0.5rem;
-  width: auto;
-  flex: 1;
+body{
+    background-color: rgb(241, 228, 211);
+    color: rgb(8, 71,38);
+    padding: 1rem;
 }
 
 
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   display: block;
 }
 
+/* Header */
+.gridContainerHeader {
+  display: grid;
+  grid-template-columns: 75px (1fr, auto);
+  grid-template-rows: 75px 1px 50px;
+  grid-template-areas:
+  "header-icon header-title header-title"
+  ".            .           ."
+  "header-menu header-menu header-search";
+}
+
+.logo {
+  grid-area: header-icon;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+}
+.logo img {
+  width: 150px;
+  height: auto;
+}
+
+.headerTitle {
+  font-size: 1.5rem;
+  grid-area: header-title;
+  display: flex;
+  align-items: center;
+  color: rgb(8, 71,38)
+}
+
+.search {
+  grid-area: header-search;
+  display: flex;
+  align-items: center;
+  border-top: 2px solid rgb(8, 71,38);
+  border-bottom: 2px solid rgb(8, 71,38);
+  padding: 0.5rem 0;
+}
+
+.menuBar {
+  grid-area: header-menu;
+  display: flex;
+  border-top: 2px solid rgb(8, 71,38);
+  border-bottom: 2px solid rgb(8, 71,38);
+    
+}
+
+/* Sökfält */
+.search form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 0.2rem;
+  width: 100%;
+}
+
+.search input {
+  padding: 0.3rem 0.5rem;
+  min-width: 0;
+  max-width: 80px;
+  flex: 1;
+  height: 30px;
+}
+
+/* Main */
 main {
   display: flex;
   gap: 1rem;
   flex-direction: column;
 }
 
-
-
-/*Hamburgerknappen*/
-
+/* Hamburgerknappen */
 .navMenuBtn {
   border: none;
   background: none;
@@ -86,21 +92,17 @@ main {
   font-weight: bold;
   display: flex;
   align-items: center;
+  white-space: nowrap;
+  color: rgb(8, 71,38);
+  padding-left: 1rem;
 }
 
-
-
-/* Nav meny för mobilvy*/
-
+/* Nav meny för mobilvy */
 .navMenu {
   width: 50%;
-  order: 2;
   display: flex;
   align-items: center;
   justify-content: center;
-  list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 /* Menylistans punktprickar borttagna */
@@ -119,22 +121,18 @@ main {
   display: block;
 }
 
-.headerNav {
-  display: none;
-}
-
-.headerNav.open {
-  display: block;
-}
-
-
 .articleTwo img {
   display: none;
 }
 
-.article img {
-  aspect-ratio: 2/1;
-  object-fit: cover;
+article img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+.byline {
+  font-style: italic;
+  margin-bottom: 1rem;
 }
 
 /* Formulär */
@@ -167,8 +165,7 @@ input[type="checkbox"] {
   gap: 1rem;
 }
 
-
-/* Footer*/
+/* Footer */
 footer {
   display: flex;
   flex-wrap: wrap;
@@ -185,6 +182,6 @@ footer li {
   margin-bottom: 0.5rem;
 }
 
-footer>div:nth-child(3) {
+footer > div:nth-child(3) {
   width: 100%;
 }

@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>Åke Vilse</title>
+  <title>Rusty Travellers</title>
   <!--Syns i webläsarens flik-->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="style.css">
@@ -12,46 +12,46 @@
 
 <body>
   <header class="gridContainerHeader">
-  <div class="newsName">
-    <!--Logga-->
-    <div><img class="logo" src="images/grey_120x90.gif" alt="Tidningsnamn logotyp" /></div>
-  </div>
-  <h1 class="headerTitle">Åke Vilse</h1>
-  <div class="search">
-    <!--Sök knapp-->
-    <form role="search">
-      <label for="search">Sök</label>
-      <input type="search" id="search" name="search" />
-      <button type="submit">Sök</button>
-    </form>
-  </div>
-  <div class="menuBar">
-    <div class="navMenu">
-      <button class="navMenuBtn">&#9776; Meny</button>
-      <nav class="headerNav">
-        <ul>
-          <!--Meny lista-->
-          <li><a href="#">Hem</a></li>
-          <li><a href="#">Senaste Nytt</a></li>
-          <li><a href="#">Arkiv</a></li>
-          <li><a href="#">Kontakta oss</a></li>
-        </ul>
-      </nav>
+    <div class="logo">
+      <!--Logga-->
+      <div><img class="logo" src="images/Rusty_Travellers_C8.png" alt="Rusty Travellers stiliserad logotyp med tält, granar och vatten"/></div>
     </div>
-  </div>
-</header>
+    <h1 class="headerTitle">Rusty Travellers</h1>
+    <div class="search">
+      <!--Sök knapp-->
+      <form role="search">
+        <label for="search">Sök</label>
+        <input type="search" id="search" name="search" />
+        <button type="submit">Sök</button>
+      </form>
+    </div>
+    <div class="menuBar">
+      <div class="navMenu">
+        <button class="navMenuBtn">&#9776; Meny</button>
+        <nav class="headerNav">
+          <ul>
+            <!--Meny lista-->
+            <li><a href="#">Hem</a></li>
+            <li><a href="#">Senaste Nytt</a></li>
+            <li><a href="#">Arkiv</a></li>
+            <li><a href="#">Kontakta oss</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
 
   <main>
     <article class="articleOne">
       <!--Första artikeln-->
-      <h2>Huvudartikelns titel</h2>
-      <img src="images/black_250x250.gif" alt="Lorem ipsum svart" loading="lazy" />
-      <p>Text skriven av Byline</p>
-      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-        laborum."</p>
+      <h2>Titta först</h2>
+      <img src="images/titta_forst.jpg" alt="Titta först" loading="lazy" />
+      <p class="byline">Text skriven av R. Lindqvist</p>
+      <p>Packningen satt som den skulle, däcken bet i gruset och vi rullade in på skogssektionen med gott självförtroende. 
+        Marken såg fast ut. Den var det inte. De första meterna gick bra, 
+        men sedan började hjulen sjunka. Gasen hjälpte inte, den grävde bara djupare. 
+        Innan jag hann reagera satt maskinen fast upp till nav i lervällingen, framhjulet pekade lite åt sidan och ingenstans att ta vägen. 
+        Motorn var tyst. Skogen likaså. Sedan hörde jag skrattet i intercomen.</p>
       <blockquote>
         <p>"Det är bättre att ha än att önska att man hade."</p>
       </blockquote>
@@ -60,33 +60,26 @@
     </article>
     <article class="articleTwo">
       <!--Andra artikeln-->
-      <h2>Andra Artikelns titel</h2>
-      <img src="images/grey_250x250.gif" alt="Lorem ipsum grå" loading="lazy" />
-      <p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
-        atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt
-        in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est
-        et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus
-        id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem
-        quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et
-        molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus
-        maiores alias consequatur aut perferendis doloribus asperiores repellat."</p>
+      <h2>Att packa 50 50</h2>
+      <img src="images/packa_smart.jpg" alt="Packa smart" loading="lazy" />
+      <p>"Lägg fram allt du tror att du behöver. Sedan tar du bort hälften.
+          Gå igenom det som är kvar och ta bort ytterligare hälften. Det som inte har minst två användningsområden har ingen plats i väskan.
+          En kudde är ett bra exempel. Den tar plats, väger något och gör exakt en sak. En packpåse med kläder gör samma jobb och du hade ändå med kläderna. 
+          En regnponcho skyddar dig i regnet, täcker packningen vid behov och fungerar som nödshelter. En kniv lagar mat, kapar rep och fixar utrustning.
+          Fråga dig alltid: vad mer kan det här göra? Kan det inte svara på den frågan lämnar du det hemma.
+          Det handlar inte om att ha så lite som möjligt. Det handlar om att varje gram du bär med dig ska förtjäna sin plats.</p>
       <button type="button">Läs mer</button>
     </article>
 
     <article class="articleThree">
       <!--Tredje artikeln-->
-      <h2>Tredje Artikelns titel</h2>
-      <img src="images/white_250x250.gif" alt="Lorem ipsum grå" loading="lazy" />
-      <p>"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized
-        by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble
-        that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which
-        is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to
-        distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able
-        to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances
-        and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to
-        be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of
-        selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse
-        pains."</p>
+      <h2>Ligg aldrig bakom</h2>
+      <img src="images/ligg_aldrig_bakom.jpg" alt="Ligg aldrig bakom" loading="lazy" />
+      <p>Vi körde bana efter dagars regn. Kompisen var bättre och jag ville lära mig, se hans kurvval, hur han hanterade de blöta partierna. 
+        Så jag höll mig bakom hela passet.
+         Varje gång hans bakhjul hittade lera skickades det rakt bakåt mot mig. Lager på lager, varv efter varv.
+         Resultatet syns på bilden.
+         Ibland betalar man för sin utbildning i lera.</p>
       <button type="button">Läs mer</button>
     </article>
 
