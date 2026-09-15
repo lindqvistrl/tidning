@@ -11,10 +11,8 @@ navMenuBtn.addEventListener('click', toggleMenu);
 
 //FUNKTIONER
 function toggleMenu() {
-   console.log('klickade på knappen');    
+     headerNav.classList.toggle('open');
 }
 
-headerNav.classList.toggle('hidden');
 
-if(headerNav.classList.contains('hidden')) {
-    navMenuBtn.innerHTML = ''
+
