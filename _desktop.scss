@@ -1,0 +1,70 @@
+@media screen and (min-width: 768px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    flex-direction: row;
+  }
+
+  .articleOne {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .articleTwo {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .articleThree {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  section {
+    grid-column: 3;
+    grid-row: 2;
+  }
+
+  .newsName {
+    width: 70%;
+  }
+
+  .headerNav {
+    display: block;
+  }
+
+  .navMenu {
+    order: 3;
+    width: 100%;
+  }
+
+  .navMenuBtn {
+    display: none;
+  }
+
+  .navMenu ul {
+    list-style: none;
+    display: flex;
+    gap: 5rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  .search {
+    order: 2;
+    width: 30%;
+  }
+
+  .articleTwo img {
+    display: block;
+  }
+
+  footer {
+    flex-wrap: nowrap;
+  }
+
+  footer>div {
+    flex: 1;
+  }
+}

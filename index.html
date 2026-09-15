@@ -4,21 +4,28 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>Tidningsnamn</title>
+  <title>Åke Vilse</title>
   <!--Syns i webläsarens flik-->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <header>
-    <div class="newsName">
-      <!--Logga och tidningens namn-->
-      <div> <img class="logo" src="images/grey_120x90.gif" alt="Tidningsnamn logotyp" />
-      </div>
-      <h1>Tidningsnamn</h1>
-    </div>
-    <div class="menuBar">
+  <header class="gridContainerHeader">
+  <div class="newsName">
+    <!--Logga-->
+    <div><img class="logo" src="images/grey_120x90.gif" alt="Tidningsnamn logotyp" /></div>
+  </div>
+  <h1 class="headerTitle">Åke Vilse</h1>
+  <div class="search">
+    <!--Sök knapp-->
+    <form role="search">
+      <label for="search">Sök</label>
+      <input type="search" id="search" name="search" />
+      <button type="submit">Sök</button>
+    </form>
+  </div>
+  <div class="menuBar">
     <div class="navMenu">
       <button class="navMenuBtn">&#9776; Meny</button>
       <nav class="headerNav">
@@ -31,16 +38,8 @@
         </ul>
       </nav>
     </div>
-    <div class="search">
-      <!--Sök knapp-->
-      <form role="search">
-        <label for="search">Sök</label>
-        <input type="search" id="search" name="search" />
-        <button type="submit">Sök</button>
-      </form>
-    </div>
   </div>
-  </header>
+</header>
 
   <main>
     <article class="articleOne">
