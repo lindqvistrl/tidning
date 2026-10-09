@@ -44,12 +44,12 @@
 
   .articleOne {
     grid-column: 1;
-    grid-row: 1 span 2;
+    grid-row: 1;
   }
 
   .articleTwo {
     grid-column: 2;
-    grid-row: 1 span 2;
+    grid-row: 1;
   }
 
   .articleThree {
@@ -78,5 +78,8 @@
 
   footer > div {
     flex: 1;
+  }
+  footer > div:nth-child(3) {
+  width: 100%;
   }
 }
