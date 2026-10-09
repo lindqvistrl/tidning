@@ -1,4 +1,6 @@
-# Tidningssida
+# Inlämningsuppgift 2
+
+## Tidningssida
 
 En responsiv tidningssida byggd mobile first. Skoluppgift i kursen JavaScript, HTML och CSS på Medieinstitutet, hösten 2026.
 
